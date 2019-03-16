@@ -1,0 +1,84 @@
+:backend: revealjs
+//:revealjs_theme: sky
+:revealjs_theme: night
+//:revealjs_theme: league
+//:revealjs_theme: moon
+//:revealjs_theme: blood
+//:revealjs_theme: simple
+//:revealjs_theme: solarized
+//:revealjs_theme: beige
+//:revealjs_theme: black
+//:revealjs_theme: white
+//:revealjs_theme: serif
+
+:revealjs_overview: true
+:revealjs_control: true
+:revealjs_previewLinks: true
+:revealjs_transition: concave
+:revealjs_center: false
+:revealjs_autoSlide: 0
+:revealjs_progress: true
+
+:icons: font
+
+//http://asciidoctor.org/docs/install-and-use-revealjs-backend/
+
+[%notitle]
+== Learn Bash the Hard Way
+
+image::images/lbthw.png[background, size=contain]
+
+== What is Bash?
+
+[%step]
+- A shell program
+
+- Translates commands to Operating System calls
+
+=== Other Shells
+
+
+- ash
+
+- dash
+
+- ksh
+
+- csh
+
+- zsh
+
+=== History of Bash
+
+image::images/shell_history.png[height=400]
+
+=== What You Learned
+
+[%step]
+- What a shell is
+
+- How to start a different shell
+
+- Shells are related by their history
+
+=== Exercises
+
+[%step]
+- Try running the other shells
+
+- Read their manual pages
+
+- Read about their history
+
+- Find out some differences between sh and bash
+
+=== What's Next?
+
+[%step]
+- Quoting
+
+- Globbing
+
+== Learn Bash the Hard Way
+
+image::images/lbthw.png[background, size=contain]
