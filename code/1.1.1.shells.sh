@@ -1,0 +1,3 @@
+csh
+echo $dirstack
+exit
