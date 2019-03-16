@@ -1,0 +1,63 @@
+Intro:
+
+Who am I, what have I done.
+Twitter best place to contact, or mail ian.miell@gmail.com / meirionconsulting?
+No-one ever taught me bash.
+
+Boundaries - introduction, so advanced questions won't be answered.
+However, even experienced users can get something out of it
+
+Target audiences and what you'll get out of it:
+
+- hardly used bash    => will get a coverage of main areas of bash interest
+- used bash somewhat  => refresher, and explain a few things seen before
+- used bash for years => 'aha moments' - I'd always wondered about that!
+
+Poll: experience level
+
+- never used bash
+- used bash for < 2 years
+- used bash for < 5 years
+- used bash for < 10 years
+- used bash for > 10 years
+
+Use group chat with a +- to indicate yes/no. Practice this?
+
+72 slides
+
+Map of the course, refer back to it as we go through.
+
+Lots of screensharing.
+
+Prereqs/software required:
+
+ grep
+ an editor (i prefer vim)
+ rename
+
+Where to get these?
+
+
+==============
+
+Structure of the course.
+
+
+Part I - Fundamentals
+
+1.intro.md
+1.1.bash_core.md
+1.3.variables.md
+1.2.globbing.md
+1.5.pipes_redirects.md
+
+Part II - Fundamentals II
+
+2.2.tests.md
+2.3.loops.md
+1.4.functions.md
+
+Part III - Scripting
+
+1.6.scripts_and_startup.md
+2.1.command_substitution.md

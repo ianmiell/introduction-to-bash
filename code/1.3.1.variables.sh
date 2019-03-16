@@ -1,4 +1,5 @@
 #!/bin/bash
+
 # Variables and quoting
 MYSTRING=astring
 echo $MYSTRING
@@ -9,6 +10,8 @@ MYSENTENCE="A sentence with $MYSTRING in it"
 echo $MYSENTENCE
 MYSENTENCE='A sentence with $MYSTRING in it'
 echo $MYSENTENCE
+
+# Quoting
 MYGLOB=*
 echo $MYGLOB
 MYGLOB="*"
@@ -17,6 +20,7 @@ MYGLOB='*'
 echo "$MYGLOB"
 echo '$MYGLOB'
 echo $MYGLOB
+
 # Shell variables
 echo $PPID
 PPID=nonsense
@@ -24,11 +28,9 @@ echo $PPID
 readonly MYVAR=astring
 MYVAR=anotherstring
 
-
 # env / export
 env
 export
-
 
 # export
 MYSTRING=astring
