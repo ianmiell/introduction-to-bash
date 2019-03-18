@@ -26,59 +26,108 @@
 [%notitle]
 == Learn Bash the Hard Way
 
-image::images/lbthw.png[background, size=contain]
+image::images/lbthw.png[height=230]
 
-== What is Bash?
+image::images/me.jpg[height=150]
 
-[%step]
-- A shell program
+== Introduction
 
-- Translates commands to Operating System calls
-
-=== Other Shells
-
-
-- ash
-
-- dash
-
-- ksh
-
-- csh
-
-- zsh
-
-=== History of Bash
-
-image::images/shell_history.png[height=400]
-
-=== What You Learned
+=== About Me
 
 [%step]
-- What a shell is
 
-- How to start a different shell
+- Twitter: @ianmiell
 
-- Shells are related by their history
+- email: ian.miell@gmail.com
 
-=== Exercises
 
-[%step]
-- Try running the other shells
-
-- Read their manual pages
-
-- Read about their history
-
-- Find out some differences between sh and bash
-
-=== What's Next?
+=== Me and Bash
 
 [%step]
-- Quoting
 
-- Globbing
+- Career
 
-== Learn Bash the Hard Way
+- No-one ever taught me bash
 
-image::images/lbthw.png[background, size=contain]
+- Stumbled for years
+
+- Decided to write a book
+
+=== This Course
+
+- Polls
+
+- Exercises
+
+- Group chat
+
+- If you have 'advanced' questions, mail/tweet me
+
+- Occasional yes/no questions (practice)
+
+
+=== Pre-requisites
+
+[%step]
+
+- Familiar with commmand line
+
+- Bash version (ideally 4+)
+
+- TODO: programs etc
+
+- Any editor you like (vim for me)
+
+- Windows
+
+=== Target Audiences
+
+[%step]
+
+Target audiences and what you'll get out of it:
+
+- hardly used bash    => will get a coverage of 90% of bash features used
+
+- used bash somewhat  => refresher, and maybe explain a few things seen before
+
+- used bash for years => 'aha moments' - I'd always wondered about that!
+
+
+=== Poll - Experience?
+
+[%step]
+
+- never used bash
+
+- used bash for < 2 years
+
+- used bash for < 5 years
+
+- used bash for < 10 years
+
+- used bash for > 10 years
+
+=== Structure of Course
+
+TODO
+
+//Structure of the course.
+//
+//Part I - Fundamentals
+//
+//1.intro.md
+//1.1.bash_core.md
+//1.3.variables.md
+//1.2.globbing.md
+//1.5.pipes_redirects.md
+//
+//Part II - Fundamentals II
+//
+//2.2.tests.md
+//2.3.loops.md
+//1.4.functions.md
+//
+//Part III - Scripting
+//
+//1.6.scripts_and_startup.md
+//2.1.command_substitution.md
