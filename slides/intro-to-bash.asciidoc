@@ -101,7 +101,6 @@ TODO: update?
 [%step]
 - Part I - Fundamentals
 
-//1.1.bash_core.md
 //1.3.variables.md
 //1.2.globbing.md
 //1.5.pipes_redirects.md
@@ -148,7 +147,39 @@ TODO: update?
 
 - Redirects
 
-=== What is Bash?
+== What is Bash?
+
+[%step]
+- What's a shell?
+
+- Other shells
+
+- A programming language
+
+=== What is a Shell?
+
+[%step]
+- Takes commands
+
+- Interprets them into OS calls
+
+- Needs a language to do this
+
+-
+
+=== 1. Brief History of Bash
+
+[%step]
+- Family tree of shells
+
+image::images/lbthw.png[width=200]
+
+- Terminal (csh)
+
+== 2. Variables
+
+- Terminal
+
 
 == Part II - Fundamentals II
 
