@@ -1,15 +1,6 @@
 :backend: revealjs
-//:revealjs_theme: sky
 :revealjs_theme: night
-//:revealjs_theme: league
-//:revealjs_theme: moon
-//:revealjs_theme: blood
-//:revealjs_theme: simple
-//:revealjs_theme: solarized
-//:revealjs_theme: beige
-//:revealjs_theme: black
-//:revealjs_theme: white
-//:revealjs_theme: serif
+//:revealjs_theme: league //:revealjs_theme: moon //:revealjs_theme: blood //:revealjs_theme: simple //:revealjs_theme: solarized //:revealjs_theme: beige //:revealjs_theme: black //:revealjs_theme: white //:revealjs_theme: serif //:revealjs_theme: sky
 
 :revealjs_overview: true
 :revealjs_control: true
@@ -35,7 +26,6 @@ image::images/me.jpg[height=150]
 === About Me
 
 [%step]
-
 - Twitter: @ianmiell
 
 - email: ian.miell@gmail.com
@@ -44,7 +34,6 @@ image::images/me.jpg[height=150]
 === Me and Bash
 
 [%step]
-
 - Career
 
 - No-one ever taught me bash
@@ -69,7 +58,6 @@ image::images/me.jpg[height=150]
 === Pre-requisites
 
 [%step]
-
 - Familiar with commmand line
 
 - Bash version (ideally 4+)
@@ -83,7 +71,6 @@ image::images/me.jpg[height=150]
 === Target Audiences
 
 [%step]
-
 Target audiences and what you'll get out of it:
 
 - hardly used bash    => will get a coverage of 90% of bash features used
@@ -96,7 +83,6 @@ Target audiences and what you'll get out of it:
 === Poll - Experience?
 
 [%step]
-
 - never used bash
 
 - used bash for < 2 years
@@ -109,27 +95,69 @@ Target audiences and what you'll get out of it:
 
 === Structure of Course
 
-TODO
 
-//Structure of the course.
-//
-//Part I - Fundamentals
-//
-//1.intro.md
+TODO: update?
+
+[%step]
+- Part I - Fundamentals
+
 //1.1.bash_core.md
 //1.3.variables.md
 //1.2.globbing.md
 //1.5.pipes_redirects.md
+//2.5.set.md
 //
-//Part II - Fundamentals II
-//
+- Part II - Fundamentals II
+
+//1.4.functions.md
 //2.2.tests.md
 //2.3.loops.md
-//1.4.functions.md
-//
-//Part III - Scripting
-//
+//2.4.exit_codes.md
+//2.6.file_substitution.md
+//2.7.subshells.md
+
+- Part III - Scripting
+
 //1.6.scripts_and_startup.md
 //2.1.command_substitution.md
+//2.8.ifs.md
+//3.3.here_docs.md
+//4.2.debugging.md
+//3.5.misc.md
+
+- Part IV - Advanced
+
+//3.x.readline.md
+//3.1.terminal_codes.md
+//4.1.traps.md
+//4.3.string_manipulation.md
+//3.2.prompt.md
+//3.4.history.md
+//4.4.autocomplete.md
+//4.5.cheapci.md
 
 
+== Part I - Fundamentals
+
+[%step]
+- Variables
+
+- Globbing
+
+- Pipes
+
+- Redirects
+
+=== What is Bash?
+
+== Part II - Fundamentals II
+
+[%step]
+
+
+== Part III - Scripting
+
+[%step]
+== Part IV - Advanced
+
+[%step]
