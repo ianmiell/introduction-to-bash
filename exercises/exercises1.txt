@@ -1,0 +1,21 @@
+Globs:
+
+1) Create a folder called bash_intro_ex1 and move into it
+
+2) Create ten files called 'one', 'two', 'three' and so on up to 'ten'.
+
+3) Run echo to output any of the ten files that have an 'o' in the name.
+
+4) Run echo to output any of the ten files with four characters in it.
+
+5) Run echo to output
+
+6) Create a file called '*'
+
+7) Run ls to output only the file called '*'
+
+8) Try and remove just the file called '*'
+
+Stretch exercises:
+
+TODO

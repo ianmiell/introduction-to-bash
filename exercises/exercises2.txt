@@ -1,0 +1,9 @@
+Variables
+=========
+
+1)
+
+2) Take the output of `env` in your shell and work out why each item is there
+and what it might be used by. You may want to use `man bash`, or use google to
+figure it out. Or you could try re-setting it and see what happens.
+
