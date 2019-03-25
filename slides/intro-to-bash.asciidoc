@@ -180,6 +180,40 @@ image::images/lbthw.png[width=200]
 
 - Terminal
 
+=== Variables - Recap
+
+- TODO
+
+== 3. Globbing and Quoting
+
+=== We Will Cover
+
+=== Activity
+
+- Terminal
+
+== 4. Pipes and Redirects
+
+- Probably used before
+
+- Problem!
+
+=== We Will Cover
+
+- File descriptors
+
+- 'Special' files
+
+- 'Standard out' vs 'Standard error'
+
+=== Activity
+
+- Terminal
+
+=== Globbing and Quoting - Recap
+
+- Terminal
+
 
 == Part II - Fundamentals II
 
