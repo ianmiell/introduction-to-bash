@@ -57,6 +57,7 @@ EXERCISE
 BREAK
 
 Part II - Fundamentals II
+2.4.exit_codes.md
 2.2.tests.md
 2.3.loops.md
 1.4.functions.md
@@ -66,13 +67,64 @@ Part II - Fundamentals II
 Part III - Scripting
 1.6.scripts_and_startup.md
 2.5.set.md
-2.4.exit_codes.md
+4.2.debugging.md
+EXERCISE
 2.7.subshells.md
-2.8.ifs.m
+2.8.ifs.md
 
 Part IV - Advanced
 4.1.traps.md
-4.2.debugging.md
 4.3.string_manipulation.md
 4.4.autocomplete.md
 4.5.cheapci.md
+
+
+Bash Basics I (50-55 minutes)
+
+Discussion: 5 minutes
+What do you want to do with bash (see recommended preparation above)?
+Presentation: What is bash, basics part I (globbing, variables) - 15 minutes
+Exercise: 10 minutes
+Globbing challenge
+Shell variable research
+Presentation: Basics, part II (pipes and redirects) - 10 minutes
+Exercise: 10 minutes
+Pipes and redirect challenges
+Discussion: 5 minutes
+Recap material
+
+Break (5 minutes)
+
+Bash Basics II (50-55 minutes)
+Discussion: 5 minutes
+What is a programming language? Is bash a programming language?
+Presentation: Exit codes, tests, loops, functions - 25 minutes
+Exercise: 10 minutes
+Write function that works over files in a folder
+Presentation: Command and file substitution - 15 minutes
+Discussion: 5 minutes
+Recap material
+
+Break (5 minutes)
+
+Scripting Bash (50-55 minutes)
+Presentation: Scripts and Startup, Shell Options, Debugging - 20 minutes
+Exercise: 10 minutes
+Examine your own startup
+Change startup to add options, see what happens
+Presentation: Subshells, IFS - 10 minutes
+Exercise: 10 minutes
+Write script to deal with sets of folders with spaces in filenames
+Discussion: 5 minutes
+Recap material
+
+Break (5 minutes)
+
+Advanced Bash (50-55 minutes)
+Presentation: Trapping and signals - 15 minutes
+Exercise: 10 minutes
+Script you can’t escape?
+Presentation: String manipulation, autocomplete - 15 minutes
+Discussion: 10 minutes
+Walk-through of ‘cheapci’ script
+
