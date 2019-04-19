@@ -47,35 +47,46 @@ Structure of the course.
 
 
 Part I - Fundamentals
+DISCUSSION - what to do with bash?
 1.intro.md
 1.1.bash_core.md
 1.3.variables.md
 1.2.globbing.md
-EXERCISE
+EXERCISE 1
 1.5.pipes_redirects.md
-EXERCISE
+EXERCISE 2
+DISCUSSION - recap
 BREAK
 
 Part II - Fundamentals II
+DISCUSSION - what is a programming language? is bash a programming language?
 2.4.exit_codes.md
 2.2.tests.md
 2.3.loops.md
 1.4.functions.md
+EXERCISES 3
 2.1.command_substitution.md
 2.6.file_substitution.md
+DISCUSSION - recap
+BREAK
 
 Part III - Scripting
 1.6.scripts_and_startup.md
 2.5.set.md
 4.2.debugging.md
-EXERCISE
+EXERCISE 4 - examine own startup
 2.7.subshells.md
 2.8.ifs.md
+EXERCISE 5 - write a script
+DISCUSSION - recap
+BREAK
 
 Part IV - Advanced
 4.1.traps.md
+EXERCISE 6 - script you can't escape
 4.3.string_manipulation.md
 4.4.autocomplete.md
+DISCUSSION - walthrough ci script
 4.5.cheapci.md
 
 
