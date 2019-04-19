@@ -95,46 +95,16 @@ Target audiences and what you'll get out of it:
 
 === Structure of Course
 
-
-TODO: update?
-
 [%step]
 - Part I - Fundamentals
 
-//1.3.variables.md
-//1.2.globbing.md
-//1.5.pipes_redirects.md
-//2.5.set.md
-//
-- Part II - Fundamentals II
+// See plan.md
 
-//1.4.functions.md
-//2.2.tests.md
-//2.3.loops.md
-//2.4.exit_codes.md
-//2.6.file_substitution.md
-//2.7.subshells.md
+- Part II - Fundamentals II
 
 - Part III - Scripting
 
-//1.6.scripts_and_startup.md
-//2.1.command_substitution.md
-//2.8.ifs.md
-//3.3.here_docs.md
-//4.2.debugging.md
-//3.5.misc.md
-
 - Part IV - Advanced
-
-//3.x.readline.md
-//3.1.terminal_codes.md
-//4.1.traps.md
-//4.3.string_manipulation.md
-//3.2.prompt.md
-//3.4.history.md
-//4.4.autocomplete.md
-//4.5.cheapci.md
-
 
 == Part I - Fundamentals
 
@@ -174,7 +144,7 @@ TODO: update?
 
 image::images/lbthw.png[width=200]
 
-- Terminal (csh)
+- Terminal (tcsh)
 
 == 2. Variables
 

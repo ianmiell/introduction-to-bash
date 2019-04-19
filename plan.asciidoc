@@ -97,10 +97,10 @@ What do you want to do with bash (see recommended preparation above)?
 Presentation: What is bash, basics part I (globbing, variables) - 15 minutes
 Exercise: 10 minutes
 Globbing challenge
-Shell variable research
 Presentation: Basics, part II (pipes and redirects) - 10 minutes
 Exercise: 10 minutes
 Pipes and redirect challenges
+Shell variable research
 Discussion: 5 minutes
 Recap material
 

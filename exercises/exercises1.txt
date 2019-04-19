@@ -1,4 +1,5 @@
-Globs:
+Globs
+=====
 
 1) Create a folder called bash_intro_ex1 and move into it
 
@@ -16,6 +17,3 @@ Globs:
 
 8) Try and remove just the file called '*'
 
-Stretch exercises:
-
-TODO

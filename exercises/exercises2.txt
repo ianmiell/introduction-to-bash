@@ -1,7 +1,15 @@
+Pipes and Redirects
+===================
+
+1) Force an error on the terminal and capture the output, working out if the error was sent to standard output or standard error.
+
+2) Create a folder with several text files in it, and then 'cat' them to a single file. Then 'cat' them again, but append to the file so there are two copies of all files in the new file.
+
 Variables
 =========
 
-1) Take the output of `env` in your shell and work out why each item is there
+1) Create a variable 'STILL_THERE' that will persist if you run 'bash' in your terminal and then try to echo it
+
+2) Take the output of `env` in your shell and work out why each item is there
 and what it might be used by. You may want to use `man bash`, or use google to
 figure it out. Or you could try re-setting it and see what happens.
-
