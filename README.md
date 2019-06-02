@@ -6,4 +6,4 @@
 
 `slides`    - asciidoc slides
 
-For author only: See `lbthw/oreilly_course`
+For author only: See `lbthw/oreilly_course/*`
