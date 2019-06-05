@@ -17,3 +17,10 @@ Globs
 
 8) Try and remove just the file called '*'
 
+
+
+
+
+1\) Create a folder with files with very similar names and use globs to list one and not the other.
+
+3\) Research the program ‘grep’. If you already know it, read the grep man page. (Type ‘man grep’).
