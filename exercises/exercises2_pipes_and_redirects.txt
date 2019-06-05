@@ -1,0 +1,3 @@
+Try a few different commands and work out what output goes to standard output and what output goes to standard error. Try triggering errors by misusing programs.
+Write commands to redirect standard output to file descriptor ‘3’.
+Research what the `|&` pipe operator does. If you can't find out, try the command `cat file2 |& grep -c file` and see what changes compared to when you ran it above.

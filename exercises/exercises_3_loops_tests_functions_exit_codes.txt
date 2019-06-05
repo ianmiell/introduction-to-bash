@@ -1,0 +1,5 @@
+
+1\) Run `typeset -f`. Find out how this relates to `declare -f` by looking at the bash man page (`man bash`).
+
+2\) alias `alias`, override `cd`. Try and break things. Have fun. If you get stuck, close down your terminal, or exit your bash shell (if you haven’t overridden exit!).
+And yes, you can alias alias. EXERCISE
