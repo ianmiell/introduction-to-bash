@@ -10,3 +10,13 @@ correct place.
 3\) Use the `find` and `wc` commands to count the number of files on your
 system and perform different actions if the number is higher or lower than what
 you expect.
+
+1\) Find a real program that uses getopts to process arguments and figure out what
+it’s doing.
+
+2\) Write a while loop to check where a file exists every few seconds. When it does,
+break out of the loop with a message.
+
+1\) Look up under what circumstances git returns a non-zero exit code.
+
+2\) Look up all the ‘special parameters’ and see what they do. Play with them. Research under what circumstances you might want to use them.
