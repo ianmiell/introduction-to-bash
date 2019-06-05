@@ -3,3 +3,10 @@
 
 2\) alias `alias`, override `cd`. Try and break things. Have fun. If you get stuck, close down your terminal, or exit your bash shell (if you haven’t overridden exit!).
 And yes, you can alias alias. EXERCISE
+
+1\) Research all the unary operators, and try using them (see `man bash`)
+2\) Write a script to check whether key files and directories are in their
+correct place.
+3\) Use the `find` and `wc` commands to count the number of files on your
+system and perform different actions if the number is higher or lower than what
+you expect.
