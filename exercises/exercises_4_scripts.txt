@@ -68,3 +68,11 @@ things like this before, which are less neat (but good enough):
 1\) Read the man page to see what all the options are. Don’t worry if you don’t understand it all yet, just get a feel for what’s there.
 
 2\) Set up a shell with unique variables and functions and use set to create a script to recreate those items in another shell.
+
+
+
+SHELLCHECK
+1\) Find a large bash script on a social coding site such as GitHub, and run
+shellcheck over it. Contribute back any improvements you find.
+
+Which `set` flag does nounset correspond to? EXERCISE
