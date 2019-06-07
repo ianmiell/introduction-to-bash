@@ -1,0 +1,10 @@
+1\) Show that the group command (`{` and `}`) does affects the outer shell's
+working directory, while a subshell does.
+
+2\) Work out what the `BASH_SUBSHELL` variable does.
+
+
+1\) Show that the group command (`{` and `}`) does affects the outer shell's
+working directory, while a subshell does.
+
+2\) Work out what the `BASH_SUBSHELL` variable does.
