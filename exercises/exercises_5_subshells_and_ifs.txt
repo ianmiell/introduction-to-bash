@@ -1,10 +1,7 @@
-1\) Show that the group command (`{` and `}`) does affects the outer shell's
-working directory, while a subshell does.
+1) Show that the group command (`{` and `}`) doesn't affect the outer shell's working directory, while a subshell (`(` and `)`)does.
 
-2\) Work out what the `BASH_SUBSHELL` variable does.
+2) Work out what the `BASH_SUBSHELL` variable does.
 
+3) Find any files that have spaces in them from your '~' or $HOME folder. If you have none, create some and then find them with the find command.
 
-1\) Show that the group command (`{` and `}`) does affects the outer shell's
-working directory, while a subshell does.
-
-2\) Work out what the `BASH_SUBSHELL` variable does.
+4) Create a for loop that - for each file with a space in - adds a line with the filename to a file called 'spaces.txt'.

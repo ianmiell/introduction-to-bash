@@ -1,22 +1,13 @@
+1) Write a script to check specific files and directories are in their correct place.
 
-1\) Run `typeset -f`. Find out how this relates to `declare -f` by looking at the bash man page (`man bash`).
+2) Use the `find` and `wc` commands to count the number of files on your system and perform different actions if the number is higher or lower than what you expect.
 
-2\) alias `alias`, override `cd`. Try and break things. Have fun. If you get stuck, close down your terminal, or exit your bash shell (if you haven’t overridden exit!).
-And yes, you can alias alias. EXERCISE
+3) Write a while loop to check where a file exists every few seconds. When it does, break out of the loop with a message.
 
-1\) Research all the unary operators, and try using them (see `man bash`)
-2\) Write a script to check whether key files and directories are in their
-correct place.
-3\) Use the `find` and `wc` commands to count the number of files on your
-system and perform different actions if the number is higher or lower than what
-you expect.
+4) alias `alias`, override `cd`. Try and break things. Have fun. If you get stuck, close down your terminal, or exit your bash shell (if you haven’t overridden exit!). And yes, you can alias alias.
 
-1\) Find a real program that uses getopts to process arguments and figure out what
-it’s doing.
+5) Research all the unary operators, and try using them (see `man bash`)
 
-2\) Write a while loop to check where a file exists every few seconds. When it does,
-break out of the loop with a message.
+6) Look up under what circumstances git returns a non-zero exit code.
 
-1\) Look up under what circumstances git returns a non-zero exit code.
-
-2\) Look up all the ‘special parameters’ and see what they do. Play with them. Research under what circumstances you might want to use them.
+7) Look up all the ‘special parameters’ and see what they do. Play with them. Research under what circumstances you might want to use them.

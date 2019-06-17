@@ -1,78 +1,19 @@
-1\) Look for examples of where these operators are used on the web, and figure
-out what they're doing.
+1) Look for examples of where the <() are used on github, and figure out what they're doing. Hint: search for 'process substitution' on github, and filter to shell scripts.
 
-2\) Look through your bash history (by typing `history`) and see where you could
-have used these operators.
+2) Look through your bash history (by typing `history`) and see where you could have used the <() operator.
 
-3\) Construct a command that uses `$()`, `<()`, and `>()`.
+3) Try various process substitution commands, and plug in variables and quotes to see what happens.
 
-4) Research the `>()` Operator
+3) Construct a command that uses `$()` and `<()`.
 
-Can you guess what this does? It's similar to the `<()` but for me it was a lot trickier to grasp, and much more rarely seen (so feel free to skip).
+4) Go through all the scripts that your bash startup went through. Read through them and try and understand what they’re doing. If you don’t understand parts of them, try and figure out what’s going on by reading `man bash`.
 
-See if you can work out from this line what it does:
+5) Go through the other files in the diagram that exist on your machine.
 
- tar cvf >(cat > out.tar) /tmp
+6) Read the man page to see what all the options are. Don’t worry if you don’t understand it all yet, just get a feel for what’s there.
 
-As with the `<()` operator, this replaces a file in a command.
-This time, rather than sending the output to the file, it takes _input_ from the command that would normally go to that file reference, and feeds that input to the command in the operator.
-Let's take a step back and think about that, because it can be hard to follow.
-Normally you'd write something like this:
+7) Set up a shell with unique variables and functions and use set to create a script to recreate those items in another shell.
 
- rm -f out.tar
- tar cvf out.tar /tmp
+8) Find a large bash script on a social coding site such as GitHub, and run shellcheck over it. Contribute back any improvements you find.
 
-The command is read into bash, expanded out, and the tar command accepts two
-arguments: a file and a folder (`out.tar` and the `/tmp`). It tars up the
-contents of the `/tmp` folder and places it in the `out.tar` file.
-
-The difference in the previous command is that the contents that would normally
-be inputted into the file is instead fed into the command `cat > out.tar`.
-
-Obviously, in this case that command is pointless - in both cases you end up
-with a file called `out.tar` that is a tar file.
-
-Let's say, however, that you wanted to use a different compression scheme for
-your tar file. You could type this:
-
-{line-numbers=on,starting-line-number=17}
-    $ tar cvf >(gzip > out.tar.gz) /tmp
-
-which would gzip the tarfile and place it into the `out.tar.gz` file.
-
-It can reasonably be pointed out that most versions of tar offer a gzip flag
-(`-z`). that does this for you. However, some versions don't (especially on
-minimal Linux distributions like busybox), so this can be a neat way of
-getting round that.
-
-I have never had a need to use this mechanism in real life, but I've written
-things like this before, which are less neat (but good enough):
-
-{line-numbers=on,starting-line-number=18}
-    $ tar cvf out.tar /tmp
-    $ gzip out.tar
-    $ rm out.tar
-
-
-
-
-
-1\) Try various command substitution commands, and plug in variables and quotes to see what happens.
-
-2\) Explain why three backslashes are required in the last example.
-
-1\) Go through all the scripts that your bash session went through. Read through them and try and understand what they’re doing. If you don’t understand parts of them, try and figure out what’s going on by reading `man bash`.
-
-2\) Go through the other files in that diagram that exist on your machine. Do as per 1).
-
-1\) Read the man page to see what all the options are. Don’t worry if you don’t understand it all yet, just get a feel for what’s there.
-
-2\) Set up a shell with unique variables and functions and use set to create a script to recreate those items in another shell.
-
-
-
-SHELLCHECK
-1\) Find a large bash script on a social coding site such as GitHub, and run
-shellcheck over it. Contribute back any improvements you find.
-
-Which `set` flag does nounset correspond to? EXERCISE
+9) Which `set` flag does nounset correspond to?

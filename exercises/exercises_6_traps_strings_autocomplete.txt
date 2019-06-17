@@ -1,26 +1,19 @@
-1\) Write a shell script that you can’t escape from (the machine it runs on must
-not be overloaded as a result!) in the terminal
-
-2\) Try and escape from the shell script you created in 1)
-
-3\) Ask everyone you know if they can escape the shell script
-
-4\) If no-one can escape it, send it to the author :)
-
-5\) Research the other 'special' signal traps. Use `man bash` for this.
-
-1\) Learn how to do all of the above things in sed too. This will take some research and time.
-2\) Learn how to do all of the above in perl. This will also take some research and time!
-3\) Construct a useful echo that has a double-quoted string with a single-quoted string inside, eg one that outputs:
+1) Construct an 'echo' that has a double-quoted string with a single-quoted string inside, eg one that outputs:
 
 He said 'I thought she'd said "bash was easy when $s are involved" but that can’t be true!'
 
+2) Research the other 'special' signal traps. Use `man bash` for this.
 
-1\) Write autocomplete scripts for already-existing programs you use often.
+3) Write a shell script that you can’t escape from (the machine it runs on must not be overloaded as a result!) in the terminal.
 
-2\) Look for autocomplete scripts on GitHub, and install and use them locally.
+4) Try and escape from the shell script you created in 1)
 
-3\) Read the bash manual section and figure out what all the `COMP_` variables
-store when autocompleting. Write example programs to use them.
+5) Ask everyone you know if they can escape the shell script
 
+6) If no-one can escape it, send it to the author :)
 
+7) Write autocomplete scripts for already-existing programs you use often.
+
+8) Look for autocomplete scripts on GitHub, and install and use them locally.
+
+9) Read the bash manual section and figure out what all the `COMP_` variables store when autocompleting. Write example programs to use them.

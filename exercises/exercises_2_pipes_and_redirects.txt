@@ -1,3 +1,11 @@
-Try a few different commands and work out what output goes to standard output and what output goes to standard error. Try triggering errors by misusing programs.
-Write commands to redirect standard output to file descriptor ‘3’.
-Research what the `|&` pipe operator does. If you can't find out, try the command `cat file2 |& grep -c file` and see what changes compared to when you ran it above.
+
+Pipes and Redirects
+===================
+
+1) Force an error on the terminal and capture the output, working out if the error was sent to standard output or standard error.
+
+2) Create a folder with several text files in it, and then 'cat' them to a single file. Then 'cat' them again, but append to the file so there are two copies of all files in the new file.
+
+3) Write a command to echo standard output to file descriptor ‘3’.
+
+4) Research what the `|&` pipe operator does. If you can't find out, try the command `cat file2 |& grep -c file` and see what changes compared to when you ran it above.
