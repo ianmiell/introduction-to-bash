@@ -14,12 +14,13 @@
 
 //http://asciidoctor.org/docs/install-and-use-revealjs-backend/
 
-[%notitle]
-== Learn Bash the Hard Way
+== Introduction to Bash
 
-image::images/lbthw.png[height=230]
+Ian Miell
 
-image::images/me.jpg[height=150]
+@ianmiell
+
+image::images/me.jpg[height=200]
 
 == Introduction
 
@@ -94,11 +95,9 @@ Target audiences and what you'll get out of it:
 === Structure of Course
 
 [%step]
-- Part I - Basics
+- Part I - Bash Fundamentals
 
-// See plan.md
-
-- Part II - Basics II
+- Part II - Basics Fundamentals (II)
 
 - Part III - Scripting
 
@@ -106,11 +105,6 @@ Target audiences and what you'll get out of it:
 
 
 == Part I - Fundamentals
-
-//1.3.variables.md
-//1.2.globbing.md
-//1.5.pipes_redirects.md
-//2.5.set.md
 
 [%step]
 - Variables
@@ -135,13 +129,11 @@ Target audiences and what you'll get out of it:
 [%step]
 - Takes commands
 
-- Interprets them into OS calls
+- Interprets them into OS calls and computations
 
 - Needs a language to do this
 
--
-
-=== 1. Brief History of Bash
+=== 1.1 Brief History of Bash
 
 [%step]
 - Family tree of shells
@@ -150,10 +142,11 @@ image::images/lbthw.png[width=200]
 
 - Terminal (tcsh)
 
-== 2. Variables
+== 1.2 Variables
 
 === We Will Cover
 
+[%step]
 - Basic variables
 
 - Quoting variables
@@ -168,24 +161,52 @@ image::images/lbthw.png[width=200]
 
 === Variables - Recap
 
-- TODO
+[%step]
+- Bash evaluation and space separation
 
-== 3. Globbing and Quoting
+- Quoting and variables: " vs '
+
+- Shell variables
+
+- Exported vs local variables
+
+- Readonly variables
+
+- Arrays, braces and variable names
+
+== 1.3 Globbing and Quoting
 
 === We Will Cover
+
+[%step]
+- What a glob is
+
+- Globs and quoting
+
+- Dotfiles
+
+- Globs vs regular expressions
 
 === Activity
 
 - Terminal
 
-== 4. Pipes and Redirects
+=== Globbing and Quoting - Recap
 
-- Probably used before
+[%step]
+- What '*' means
 
-- Problem!
+- Dotfiles and foldrs
+
+- Globs and regexes
+
+- Single/double quotes and globs
+
+== 1.4 Pipes and Redirects
 
 === We Will Cover
 
+[%step]
 - File descriptors
 
 - 'Special' files
@@ -198,20 +219,167 @@ image::images/lbthw.png[width=200]
 
 === Globbing and Quoting - Recap
 
-- Terminal
+[%step]
+- Standard output == file descriptor 1
+
+- Standard error == file descriptor 2
+
+- Pipes work on standard output
+
+- redirects '>' vs '>>'
+
+- '2>' and '2>&1'
+
 
 
 == Part II - Fundamentals II
 
-//1.4.functions.md
-//2.2.tests.md
-//2.3.loops.md
-//2.4.exit_codes.md
-//2.6.file_substitution.md
-//2.7.subshells.md
+=== Part II - We Will Cover
+
+[%step]
+- Functions
+
+- Tests
+
+- Loops
+
+- Exit Codes
+
+- Process Substitution
+
+- Command Substitution
+
+
+== 2.1 Functions
+
+=== We Will Cover
+
+[%step]
+- Bash functions
+
+- The four different types of command in bash
+
+=== Activity
+
+[%step]
+- Terminal
+
+=== Functions - Recap
+
+[%step]
+- Functions vs Aliases vs Programs vs Builtins
+
+- local variables
+
+- 'which', 'type', 'declare'
+
+
+== 2.2 Functions
+
+=== We Will Cover
+
+[%step]
+- What bash tests are
+
+- Different ways of writing bash tests
+
+- Logical operators
+
+- Binary and unary operators
+
+- `if` statements
+
+=== Activity
+
+- Terminal
+
+=== Tests - Recap
 
 [%step]
 
+- '[' is a builtin
+
+- '[' vs '[['
+
+- '&&' and '||'
+
+- Bash and type safety.
+
+- 'if' statements
+
+== 2.3 Loops
+
+=== We Will Cover
+
+[%step]
+- 'C'-style 'for' loops
+
+- 'for' loops over items 'in' a list
+
+- 'while' and 'until' loops
+
+- 'case' statements
+
+=== Activity
+
+- Terminal
+
+=== Loops - Recap
+
+[%step]
+
+- 'for', 'while', 'until'
+
+- 'case' and 'getopts'
+
+== 2.4 Exit Codes
+
+[%step]
+- What an exit code is
+
+- How to set one in scripts or functions
+
+- Exit code conventions
+
+- Some other 'special' parameters in bash
+
+=== Activity
+
+- Terminal
+
+=== Standard exit codes (I)
+
+- 0 == OK
+
+- 1 == General error code
+
+- 2 == Misuse of shell builtin
+
+- 126 == Cannot execute
+
+=== Standard exit codes (II)
+
+- 127 == Command not found
+
+- 128 == Invalid exit value
+
+- (128 + n) == Process killed with signal 'n'
+
+
+=== Exit Codes - Recap
+
+[%step]
+- The '$?' exit code shell variable
+
+- standard exit codes
+
+- grep - a special case
+
+- Setting exit code
+
+== 2.4 Process Substitution
+
+TODO
 
 == Part III - Scripting
 
