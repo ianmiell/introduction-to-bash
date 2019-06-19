@@ -1,0 +1,9 @@
+reveal.js
+asciidoctor-reveal.js
+*pdf
+*gz
+Gemfile.lock
+.bundle
+node_modules
+package-lock.json
+*lock*
