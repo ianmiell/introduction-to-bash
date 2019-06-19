@@ -334,6 +334,8 @@ image::images/lbthw.png[width=200]
 
 == 2.4 Exit Codes
 
+=== We Will Cover
+
 [%step]
 - What an exit code is
 
@@ -377,9 +379,21 @@ image::images/lbthw.png[width=200]
 
 - Setting exit code
 
-== 2.4 Process Substitution
+== 2.5 Process Substitution
 
-TODO
+=== We Will Cover
+
+- The <() operator
+
+=== Activity
+
+- Terminal
+
+=== Process Subsitution - Recap
+
+-
+
+== 2.6 Command Substitution
 
 == Part III - Scripting
 
