@@ -1,5 +1,9 @@
 #!/bin/bash
+
 set -x
+
+mkdir itb_globbing
+cd itb_globbing
 echo ls *
 echo ls '*'
 echo '$HOME'
@@ -22,3 +26,6 @@ rename -n 's/(.*)/new$1/' *
 'file1' would be renamed to 'newfile1'
 'file2' would be renamed to 'newfile2'
 'file3' would be renamed to 'newfile3'
+
+cd -
+rm -rf itb_globbing

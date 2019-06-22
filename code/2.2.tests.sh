@@ -41,7 +41,7 @@ unset DOESNOTEXIST
 echo $?
 [ -z ]
 echo $?
-mkdir itb_tests_dir
+mkdir itb_tests_dir && cd itb_tests_dir
 touch itb_tests_file
 [ -a itb_tests_file ]
 echo $?
@@ -51,8 +51,8 @@ echo $?
 echo $?
 [ -d itb_tests_dir ]
 echo $?
-rmdir itb_tests_dir
-rmdir itb_tests_file
+cd -
+rm -rf itb_tests_dir
 [ 10 < 2 ]
 echo $?
 [ '10' < '2' ]

@@ -15,16 +15,20 @@ echo $PPID
 readonly MYVAR=astring
 MYVAR=anotherstring
 MYSTRING=astring
+set +x
 echo type: bash
 echo type: echo $MYSTRING
 echo type: exit
+set -x
 echo $MYSTRING
 unset MYSTRING
 echo $MYSTRING
 export MYSTRING=anotherstring
+set +x
 echo type: bash
 echo type: echo $MYSTRING
 echo type: exit
+set -x
 env
 compgen -v
 bash --version

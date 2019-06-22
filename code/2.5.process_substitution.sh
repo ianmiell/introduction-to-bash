@@ -15,3 +15,5 @@ diff aout bout
 rm aout bout
 diff <(ls a) <(ls b)
 echo $(ls a)
+cd -
+rm -rf itb_process_subst

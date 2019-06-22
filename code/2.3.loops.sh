@@ -31,8 +31,6 @@ do
         ((n++))
         echo $n seconds have passed
         sleep 1
-        ((n++))
-        echo $n seconds have passed
         if [[ $n -eq 60 ]]
         then
                 break
@@ -61,3 +59,5 @@ chmod +x case.sh
 ./case.sh -b "an argument"
 ./case.sh -a -b -c
 ./case.sh
+cd -
+rm -rf itb_loops

@@ -19,3 +19,5 @@ echo `echo hello1 `echo hello2``
 echo `echo hello1 \`echo hello2\``
 echo `echo \`echo \\\`echo inside\\\`\``
 echo $(echo $(echo $(echo inside)))
+cd -
+rm -rf itb_cmdsub

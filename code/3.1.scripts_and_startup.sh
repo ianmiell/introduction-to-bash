@@ -2,8 +2,10 @@
 set -x
 mkdir -p itb_scripts_and_startups
 cd itb_scripts_and_startups
+cat > simple_script << EOF
 #!/bin/bash
 echo I am a script
+EOF
 ./simple_script
 mkdir tmp
 cd tmp
@@ -23,5 +25,9 @@ echo 'echo $MYVAR' > simple_echo
 chmod +x simple_echo
 ./simple_echo
 source simple_echo
-env -i bash --noprofile --norc
-env
+set +x
+echo type: env -i bash --noprofile --norc
+echo type: env
+set -x
+cd -
+rm -rf itb_scripts_and_startups
