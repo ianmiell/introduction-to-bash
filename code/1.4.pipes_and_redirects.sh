@@ -1,22 +1,18 @@
 #!/bin/bash
-mkdir lbthw_pipes_redirects
-cd lbthw_pipes_redirects
-
+mkdir itb_pipes_redirects
+cd itb_pipes_redirects
 # Type ls to check that there are no files in this new folder
 ls
-
 # Now we're going to echo something, but instead of outputting to the terminal
 # we're going to redirect to a file.
 echo "contents of file1" > file1
 ls
 cat file1
-
-#What we've done there is create a file just by using the right chevron, and
+# What we've done there is create a file just by using the right chevron, and
 the output of the echo command got redirected to that file. This is a basic
 redirect.
 # Pipe
 cat file1 | grep -c contents
-
 # Again, you'll notice that the output of cat did not go to the terminal. Instead it got piped to the input of another command. The pipe operator - so called because it looks like a pipe, but also because it acts like a plumbing component that connects two things together - also redirects the output of one command to the input of another.
 # The resulting output uses the grep program to count (with the minus c flag) the number of times the word contents is seen. If you're not familiar with what grep is you will need to learn as it's one of the most commonly used shell programs.  The wiki page for grep is a good place to start.
 # You might be wondering why we need pipes? You could just write the output of one command to a file, and then run another command on that file, then delete that file.
@@ -112,4 +108,4 @@ cat file3
 # With respect to redirection, it's often safer to use two right chevrons when redirecting. Even if the file doesn't exist, it will still create it if necessary.
 # Cleanup
 cd ..
-rm -rf lbthw_pipes_redirects
+rm -rf itb_pipes_redirects
