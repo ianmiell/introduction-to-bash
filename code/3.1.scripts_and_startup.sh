@@ -29,5 +29,5 @@ set +x
 echo type: env -i bash --noprofile --norc
 echo type: env
 set -x
-cd -
+cd ..
 rm -rf itb_scripts_and_startups
