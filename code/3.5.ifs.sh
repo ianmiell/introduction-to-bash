@@ -31,3 +31,17 @@ do
 done
 find . -type f | xargs -n1 grep somestring
 find . -type f -print0 | xargs -0 -n1 grep somestring
+IFS=$'\t\n'
+for f in $(echo 1 2 3 4)
+do
+  echo $f
+done
+for f in 1 2 3 4
+do
+  echo $f
+done
+IFS=$' \t\n'
+for f in "1 2" 3 4
+do
+  echo $f
+done
