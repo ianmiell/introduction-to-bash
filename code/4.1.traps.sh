@@ -3,8 +3,6 @@ set -x
 sleep 999 # NOW HIT CTRL, HOLD IT DOWN AND THEN HIT C (CTRL-c)
 echo $?
 man signal
-man 7 signal
-man man
 man man
 sleep 999 # NOW HIT CTRL, HOLD IT DOWN AND THEN HIT Z (CTRL-z)
 echo $?
