@@ -1,3 +1,6 @@
+Bash Scripting
+==============
+
 1) Look for examples of where the <() are used on github, and figure out what they're doing. Hint: search for 'process substitution' on github, and filter to shell scripts.
 
 2) Look through your bash history (by typing `history`) and see where you could have used the <() operator.

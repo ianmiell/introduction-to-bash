@@ -1,3 +1,6 @@
+Loops, Tests, Functions and Exit Codes
+======================================
+
 1) Write a script to check specific files and directories are in their correct place.
 
 2) Use the `find` and `wc` commands to count the number of files on your system and perform different actions if the number is higher or lower than what you expect.

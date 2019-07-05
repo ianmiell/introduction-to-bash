@@ -1,5 +1,20 @@
 #!/bin/bash
 set -x
+sleep 60 &
+pwd
+sleep 120 &
+sleep 121 &
+jobs
+fg
+sleep 121 # Now hit CTRL-Z
+bg
+kill %1
+wait
+sleep 20 &
+sleep 30 && false &
+wait %1 %2
+echo $?
+
 sleep 999 # NOW HIT CTRL, HOLD IT DOWN AND THEN HIT C (CTRL-c)
 echo $?
 man signal

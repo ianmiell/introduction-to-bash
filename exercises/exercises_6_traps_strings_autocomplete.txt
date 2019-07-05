@@ -1,3 +1,6 @@
+Traps, Strings, Autocomplete
+============================
+
 1) Construct an 'echo' that has a double-quoted string with a single-quoted string inside, eg one that outputs:
 
 He said 'I thought she'd said "bash was easy when $s are involved" but that can’t be true!'

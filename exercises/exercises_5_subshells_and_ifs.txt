@@ -1,3 +1,6 @@
+Subshells and IFS
+=================
+
 1) Show that the group command (`{` and `}`) doesn't affect the outer shell's working directory, while a subshell (`(` and `)`)does.
 
 2) Work out what the `BASH_SUBSHELL` variable does.
