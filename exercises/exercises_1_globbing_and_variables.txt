@@ -17,17 +17,16 @@ Globs
 
 8) Try and remove just the file called '*'
 
+9) Create a folder with files with very similar names and use globs to list some and not the others at will.
 
 Variables
 =========
 
-1) Create a folder with files with very similar names and use globs to list some and not the others at will.
+1) Create a variable called '*', and echo that variable so that only an asterisk is shown.
 
-2) Create a variable called '*', and echo that variable so that only an asterisk is shown.
+2) Research the program ‘grep’. If you already know it, read the grep man page. (Type ‘man grep’).
 
-3) Research the program ‘grep’. If you already know it, read the grep man page. (Type ‘man grep’).
-
-4) Create a variable 'STILL_THERE' that will persist if you run 'bash' in your terminal and then try to echo it
+3) Create a variable 'STILL_THERE' that will persist if you run 'bash' in your terminal and then try to echo it
 
 
 Stretch Tasks
