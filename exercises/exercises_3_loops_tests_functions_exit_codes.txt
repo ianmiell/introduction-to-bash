@@ -1,13 +1,13 @@
 Loops, Tests, Functions and Exit Codes
 ======================================
 
-1) Write a script to check specific files and directories are in their correct place.
+1) Write a series of commands to check specific files and directories are in their correct place.
 
 2) Use the `find` and `wc` commands to count the number of files on your system and perform different actions if the number is higher or lower than what you expect.
 
 3) Write a while loop to check where a file exists every few seconds. When it does, break out of the loop with a message.
 
-4) alias `alias`, override `cd`. Try and break things. Have fun. If you get stuck, close down your terminal, or exit your bash shell (if you haven’t overridden exit!). And yes, you can alias alias.
+4) alias `alias`, override `cd`. Try and break things. Have fun. If you get stuck, close down your terminal, or exit your bash shell (if you haven’t overridden exit!).
 
 5) Research all the unary operators, and try using them (see `man bash`)
 

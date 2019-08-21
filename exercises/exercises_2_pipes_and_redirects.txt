@@ -7,4 +7,4 @@ Pipes and Redirects
 
 3) Write a command to echo standard output to file descriptor ‘3’.
 
-4) Research what the `|&` pipe operator does. If you can't find out, try the command `cat file2 |& grep -c file` and see what changes compared to when you ran it above.
+4) Research what the `|&` pipe operator does. If you can't find out, try the command `cat file2 |& grep -c file` and see what changes compared to when we ran it in the course above.

@@ -1,5 +1,5 @@
-Traps, Strings, Autocomplete
-============================
+Traps, Strings
+==============
 
 1) Construct an 'echo' that has a double-quoted string with a single-quoted string inside, eg one that outputs:
 
@@ -14,9 +14,3 @@ He said 'I thought she'd said "bash was easy when $s are involved" but that canâ
 5) Ask everyone you know if they can escape the shell script
 
 6) If no-one can escape it, send it to the author :)
-
-7) Write autocomplete scripts for already-existing programs you use often.
-
-8) Look for autocomplete scripts on GitHub, and install and use them locally.
-
-9) Read the bash manual section and figure out what all the `COMP_` variables store when autocompleting. Write example programs to use them.
