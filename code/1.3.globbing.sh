@@ -1,9 +1,8 @@
-#!/bin/bash
-
-set -x
-
-mkdir itb_globbing
-cd itb_globbing
+mkdir itb_glob
+cd itb_glob
+touch file1 file2 file3
+ls *
+echo *
 echo ls *
 echo ls '*'
 echo '$HOME'
@@ -12,20 +11,17 @@ ls "*"
 ls *1
 ls file[12]
 ls file[a-z]
-ls file[0-9]
+ls fil[a-z][0-9]
+echo file?
 touch .adotfile
 mkdir .adotfolder
 touch .adotfolder/file1 .adotfolder/.adotfile
 ls
 ls *
 echo .*
-echo file?
 ls .*
 cd .
-rename -n 's/(.*)/new$1/' *
-'file1' would be renamed to 'newfile1'
-'file2' would be renamed to 'newfile2'
-'file3' would be renamed to 'newfile3'
-
-cd -
-rm -rf itb_globbing
+echo text > afile
+grep text afile
+grep '*' afile
+grep '.*' afile

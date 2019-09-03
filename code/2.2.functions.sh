@@ -1,7 +1,3 @@
-#!/bin/bash
-
-set -x
-
 function myfunc {
         echo Hello World
 }
@@ -25,25 +21,33 @@ function myfunc {
 myfunc
 echo $myvar
 local myvar="Will this work?"
+builtin ls
 builtin cd /tmp
-cd -
-builtin grep
-builtin notaprogram
+builtin cd -
+type cd
+type ls
 function cd() {
         echo 'No!'
 }
 cd /tmp
 builtin cd /tmp
+type cd
 cd -
 unset -f cd
 cd /tmp
+type cd
 cd -
 declare -f
 declare -F
+type builtin
+help builtin
+builtin grep
+builtin notaprogram
 which grep
 which cd
 which builtin
 which doesnotexist
+type which
 alias cd=doesnotexist
 alias
 cd
@@ -51,6 +55,3 @@ unalias cd
 cd /tmp
 cd -
 alias
-type ls
-type pwd
-type myfunc

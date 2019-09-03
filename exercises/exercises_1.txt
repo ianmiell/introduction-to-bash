@@ -37,3 +37,13 @@ Stretch Tasks
 2) Take the output of `env` in your shell and work out why each item is there and what it might be used by. You may want to use `man bash`, or use google to figure it out. Or you could try re-setting it and see what happens.
 
 3) Research the arrays set in your shell with `declare -a` and looking through the bash man page, and/or googling.
+Pipes and Redirects
+===================
+
+1) Force an error on the terminal and capture the output, working out if the error was sent to standard output or standard error.
+
+2) Create a folder with several text files in it, and then 'cat' them to a single file. Then 'cat' them again, but append to the file so there are two copies of all files in the new file.
+
+3) Write a command to echo standard output to file descriptor ‘3’.
+
+4) Research what the `|&` pipe operator does. If you can't find out, try the command `cat file2 |& grep -c file` and see what changes compared to when we ran it in the course above.

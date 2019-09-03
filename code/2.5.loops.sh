@@ -1,5 +1,3 @@
-#!/bin/bash
-set -x
 mkdir itb_loops && cd itb_loops
 for (( i=0; i < 20; i++ ))
 do
@@ -22,18 +20,7 @@ do
         echo "In iteration $n"
         if [[ $(cat file${n}.txt) == "15" ]]
         then
-                touch newfile
-        fi
-done
-n=0
-while true
-do
-        ((n++))
-        echo $n seconds have passed
-        sleep 1
-        if [[ $n -eq 60 ]]
-        then
-                break
+               touch newfile
         fi
 done
 a=1
@@ -42,7 +29,7 @@ case "$a" in
 2) echo 'a is 2'; echo 'ok';;
 *) echo 'a is unmatched'; echo 'failure';;
 esac
-cat > case.sh << 'EOF'
+ls -l
 #!/bin/bash
 while getopts "ab:c" opt
 do
@@ -52,12 +39,9 @@ do
     c) echo '-c invoked';;
     esac
 done
-EOF
 chmod +x case.sh
 ./case.sh -a
 ./case.sh -b
 ./case.sh -b "an argument"
 ./case.sh -a -b -c
 ./case.sh
-cd -
-rm -rf itb_loops

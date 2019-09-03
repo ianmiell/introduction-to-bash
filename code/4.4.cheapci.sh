@@ -27,7 +27,7 @@ function show_help() {
 	cat > /dev/stdout << END
 ${0} -r <repo> -l <local_checkout> [-q <pre-script>] [-w <post-script>]
    [-m <email>] [-a <mail command>] [-t <mail command attach flag>]
-   [-s <mail command subject flag] [-e <recipients flag>] [-n name] [-d <dir>] 
+   [-s <mail command subject flag] [-e <recipients flag>] [-n name] [-d <dir>]
    [-c <command>] [-f] [-v] [-h]
 
 REQUIRED ARGS:
@@ -143,7 +143,7 @@ date 2>&1 | tee -a "${BUILD_LOG_FILE}"
 if [[ -a ${LOCK_FILE} ]]
 then
 	echo "Already running" | tee -a "${BUILD_LOG_FILE}"
-	exit 
+	exit
 fi
 
 trap cleanup TERM INT QUIT EXIT

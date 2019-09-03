@@ -1,12 +1,13 @@
-#!/bin/bash
-set -x
+function a {
+ echo in a
+}
+a
 set
 man bash
-bash
 set -o posix
 set
 set +o posix
-exit
+set
 set -o
 set
 env
@@ -21,19 +22,34 @@ pwd
 cd $HOME
 cd -
 echo $DOESNOTEXIST
-echo "should not get here"' > ascript.sh
+echo "should not get here"
 chmod +x ascript.sh
 ./ascript.sh
 set -e
 set -x
 set -o errexit
 set -o xtrace
-touch afile.txt
-set -o pipefail
-grep notthere afile.txt | xargs
-echo $?
-set +o pipefail
-grep notthere afile.txt | xargs
-echo $?
+#!/bin/bash
+set -o nounset
+set -o xtrace
+A="some value"
+PS4='$(date "+%s%N => ")'
+B=
+echo "${A}"
+A="another value"
+echo "${A}"
+echo "${B}"
+pwd
+sleep 1
+pwd
 shopt -s globstar
 ls **
+#!/bin/bash
+A=some value
+echo "${A}
+echo "${B}"
+bash -n debug_script.sh
+bash debug_script.sh
+bash -v debug_script.sh
+bash -x debug_script.sh
+shellcheck ~/.bashrc

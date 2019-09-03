@@ -1,5 +1,3 @@
-#!/bin/bash
-set -x
 mkdir itb_process_subst && cd itb_process_subst
 mkdir a
 mkdir b
@@ -14,6 +12,4 @@ ls b > bout
 diff aout bout
 rm aout bout
 diff <(ls a) <(ls b)
-echo $(ls a)
-cd -
-rm -rf itb_process_subst
+diff <(ls a) <(ls b)

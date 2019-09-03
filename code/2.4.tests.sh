@@ -1,24 +1,32 @@
-#!/bin/bash
-set -x
 [ 1 = 0 ]
 echo $?
 [ 1 = 1 ]
 echo $?
+[ 0 == 0 ]
+echo $?
+[ 1 == 1 ]
+echo $?
 A=1
 [ $A = 1 ]
 echo $?
-[ $A == 1 ]
-echo $?
 [ $A = 2 ]
 echo $?
-which [
+[ $(hostname) = myhost ]
+echo $?
 builtin [
+which [
+builtin [ ]
 which test
 man test
 man [
-( [ 1 = 1 ] || [ ! '0' = '0' ] ) && [ '2' = '2' ]
+test 1 == 1
 echo $?
-[  1 = 1 -o  ! '0' = '0'  -a  '2' = '2' ]
+doesnotexist && echo here
+doesnotexist || echo here
+mkdir tmp && cd tmp
+([ 1 = 1 ] || [ ! 0 = 0 ]) && [ 2 = 2 ]
+echo $?
+[  1 = 1 -o ! 0 = 0  -a 2 = 2 ]
 echo $?
 [[ 1 = 1 ]]
 echo $?
@@ -41,7 +49,8 @@ unset DOESNOTEXIST
 echo $?
 [ -z ]
 echo $?
-mkdir itb_tests_dir && cd itb_tests_dir
+mkdir itb_tests_dir
+cd itb_tests_dir
 touch itb_tests_file
 [ -a itb_tests_file ]
 echo $?
@@ -53,10 +62,6 @@ echo $?
 echo $?
 cd -
 rm -rf itb_tests_dir
-[ 10 < 2 ]
-echo $?
-[ '10' < '2' ]
-echo $?
 [[ 10 < 2 ]]
 echo $?
 [[ '10' < '2' ]]
@@ -71,19 +76,16 @@ echo $?
 echo $?
 [ 1 -ne 1 ]
 echo $?
+[ '10' -lt '2' ]
+echo $?
+declare -i
 if [[ 10 -lt 2 ]]
 then
-  echo 'does not compute'
+  echo 'right'
 elif [[ 10 -gt 2 ]]
 then
-  echo 'computes'
+  echo 'right'
 else
-  echo 'does not compute'
+  echo 'impossible'
 fi
-if [[ 10 -lt 2 ]]; then echo 'does not compute'; fi
-if grep not_there /dev/null
-then
-    echo there
-else
-    echo not there
-fi
+if [[ 10 -lt 2 ]]; then echo 'impossible'; fi

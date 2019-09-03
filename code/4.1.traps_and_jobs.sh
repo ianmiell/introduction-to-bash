@@ -1,34 +1,29 @@
-#!/bin/bash
-set -x
-sleep 60 &
+sleep 40 &
+[1] 39165
 pwd
-sleep 120 &
-sleep 121 &
-jobs
-fg
-sleep 121 # Now hit CTRL-Z
-bg
-kill %1
+pwd
+[1]+  Done                    sleep 40
+sleep 10 &
 wait
-sleep 20 &
-sleep 30 && false &
-wait %1 %2
-echo $?
-
+[1]+  Done                    sleep 10
 sleep 999 # NOW HIT CTRL, HOLD IT DOWN AND THEN HIT C (CTRL-c)
 echo $?
 man signal
-man man
 sleep 999 # NOW HIT CTRL, HOLD IT DOWN AND THEN HIT Z (CTRL-z)
 echo $?
+jobs
+kill %1
 sleep 999 &
-KILLPID=$(echo ${!})
+KILLPID=${!}
 echo ${KILLPID}
-kill -2 ${KILLPID}
+kill -15 ${KILLPID}
+echo $?
 echo ${?}
-wait ${KILLPID}
-echo ${?}
-while :; do sleep 5; done # NOW HIT CTRL-c
+:
+: you can type anything here
+echo $?
+cd /tmp && : now in tmp folder && cd - && : now back in previous folder
+while :; do sleep 5; done
 mkdir -p itb_traps && cd lbthw_traps
 vi trap_exit.sh
 #!/bin/bash
@@ -43,13 +38,22 @@ trap "echo trapped" EXIT
 sleep 999 &
 wait
 ./trap_exit.sh &
-TRAP_EXIT_PID=$(echo ${!})
+TRAP_EXIT_PID=$!
 kill -15 ${TRAP_EXIT_PID}
 ps -ef | grep sleep
 ./trap_exit.sh &
 TRAP_EXIT_PID=$(echo ${!})
 kill -9 ${TRAP_EXIT_PID}
-sleep 999 &
-wait
-sleep 999
-./trap_exit.sh # HIT CTRL-c
+sleep 120 &
+sleep 121 &
+jobs
+[1]-  Running                 sleep 120 &
+[2]+  Running                 sleep 121 &
+fg
+sleep 121
+[2]+  Stopped                 sleep 121
+bg
+[2]+ sleep 121 &
+kill %1
+RETURN
+[1]+  Terminated: 15          sleep 120

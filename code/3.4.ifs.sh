@@ -1,5 +1,3 @@
-#!/bin/bash
-set -x
 mkdir itb_ifs && cd lbthw_ifs
 echo file1 created > "Spaces in filename1.txt"
 cat "Spaces in filename1.txt"
@@ -9,7 +7,7 @@ for f in $(ls)
 do
   ls $f
 done
-for f in 1 2 3 4
+for f in $(echo 1 2 3 4)
 do
   echo $f
 done
@@ -31,7 +29,7 @@ do
 done
 find . -type f | xargs -n1 grep somestring
 find . -type f -print0 | xargs -0 -n1 grep somestring
-IFS=$'\t\n'
+IFS=$'\n\t'
 for f in $(echo 1 2 3 4)
 do
   echo $f
@@ -40,7 +38,7 @@ for f in 1 2 3 4
 do
   echo $f
 done
-IFS=$' \t\n'
+IFS=$' \n\t'
 for f in "1 2" 3 4
 do
   echo $f
