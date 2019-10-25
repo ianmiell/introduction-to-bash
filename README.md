@@ -48,3 +48,7 @@ Some useful links that may be mentioned in the course:
 [CheapCI - a complete and useful program in bash](https://github.com/ianmiell/cheapci)
 
 [ShellCheck - get advice on your bash code](http://www.shellcheck.net)
+
+[Differences between zsh and bash](https://www.quora.com/What-is-the-difference-between-bash-and-zsh)
+
+[Grep](https://en.wikipedia.org/wiki/Grep)
