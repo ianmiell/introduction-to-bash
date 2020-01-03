@@ -9,7 +9,7 @@ Globs
 
 4) Run echo to output any of the ten files with four characters in it.
 
-5) Run echo to output
+5) Run echo to output files that begin with a vowel and have three characters 
 
 6) Create a file called '*'
 
