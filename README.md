@@ -52,3 +52,5 @@ Some useful links that may be mentioned in the course:
 [Differences between zsh and bash](https://www.quora.com/What-is-the-difference-between-bash-and-zsh)
 
 [Grep](https://en.wikipedia.org/wiki/Grep)
+
+[bashtop](https://github.com/aristocratos/bashtop/blob/master/bashtop)
